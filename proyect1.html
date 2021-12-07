@@ -33,22 +33,61 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<h2>Proyect1</h2>
-									<p>Blablabla</p>
-								blablablablablabla
-								blablablablablabla
-								blablablablablabla
+									<h2>PYTHONEER</h2>
+									<h3>EASY CODING</h3>
+									This library has been designed to optimize the first steps of a data science project. 
+									It contains functions that simplify data cleaning and data visualization. 
 									</p>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								blablablablablabla
-								blablablablablabla
-								blablablablablabla
-							        </p>
-									<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								blablablablablabla
-								blablablablablabla
-								blablablablablabla
+								<a href="https://github.com/javapagar/lib_pythoneers" class="image main"><img src="images/Logo3.png" alt="" /></a>
+								To install the full library write on your console: <b>pip install pythoneer</b><hr>
+								<P align="right">In Pythoneer, you will find numerous data cleaning and visualization functions.
+								In version 2, machine learning tools will be implemented.
+								<br>Here are some examples of the functions available:<br> 
+								<h2> </h2>
+								<h2>DATA CLEANING</h2>
+								<h2> </h2>
+								<h3 align="left">knn missings</h3>
+								<P align="right">This function firstly  select the numeric columns of the dataframe 
+									and then replace the NaNs through a KNN algorithm. 
+									The return of the function replace the values on the original dataframe.<br>
+									<b>Params</b><br>
+									df = dataframe.<br>
+									n_ngb = number of neighbors of KNN, by default 3.<br>
+								<h3 align="left">Remove columns with NaN values</h3>
+								<P align="right">This function removes the columns with more than 30 % NaN, by default.
+									The threshold can be be changed through the second param of the function<br>
+									<b>Params</b><br>
+									df = dataframe.<br>
+									per_na = threshold of NaN above which the column will be removed, by default 0.30<br>
+									rem_print = prints the list with columns removed.<br>
+									Lets see what happens with our wine dataset sample using this function:
+									<a class="image main"><img src="images/data_cleaning.PNG" alt="" /></a>
+									<h2>DATA VISUALIZATION</h2>
+								<h2> </h2>
+								<h3 align="left">UNIVARIANT PLOT</h3>
+								<P align="right">Function that graphically displays one numerical or categorical variable 
+									through a distplot/boxplot and a countplot, respectively.<br>
+									<b>Params</b><br>
+									df = dataframe.<br>
+									col_1: dataframe column (i.e. series) that contains the numeric 
+									or categorical variable to be displayed.<br>
+									boxplot: False by default. If boxplot is informed as True,
+									the function displays a boxplot instead of a histogram. It can only be used with numeric variables.<br>
+									kde: kde refers to Kernel Density Estimate, which is used for visualizing the probability density of a continuous variable.
+									It takes None by default.<br>
+									And many more ...<br>
+									here is an example of this plot with KDE enabled 
+									and the boxplot function disabled
+									<a class="image main"><img src="images/univariant.PNG" alt="" /></a>
+									<h2>The Proyect</h2>
+								<h2> </h2>
+								<P align="right">This library has been created as a group project in the Data Science 
+									bootcamp at <a href="https://www.thebridge.tech/">The Bridge | Digital Talent Accelerator.</a>
+									If you want to see all the functions and the source code, 
+									<a href="https://github.com/javapagar/lib_pythoneers">click here</a> to access the Github repository.<br>
+									I want to thank my project partners, we created a wonderful team. In the repository you can see who are part of this project..<br>
+									
 							        </p>
 								<ul class="actions special">
 									<li><a href="index.html" class="button large">HOME</a></li>
